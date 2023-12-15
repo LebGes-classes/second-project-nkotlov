@@ -1,0 +1,18 @@
+
+ˆ
+java:S1319"rThe type of "wareHouseArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ˆœÈŸ
+
+java:S1319	"tThe type of "pointOfSaleArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(Ò±Ì¢úÿÿÿÿ
+t
+java:S1104"^Make wareHouseArrayList a static final constant or non-public and provide accessors if needed.(ˆœÈŸ
+{
+java:S1104	"`Make pointOfSaleArrayList a static final constant or non-public and provide accessors if needed.(Ò±Ì¢úÿÿÿÿ
+N
+java:S1444"8Make this "public static wareHouseArrayList" field final(ˆœÈŸ
+U
+java:S1444	":Make this "public static pointOfSaleArrayList" field final(Ò±Ì¢úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿÙ–¼
+3
+java:S2386"Make this member "protected".(ˆœÈŸ
+8
+java:S2386	"Make this member "protected".(Ò±Ì¢úÿÿÿÿ
