@@ -1,14 +1,18 @@
 
-”
-java:S1319"rThe type of "assistantArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(–â­Óşÿÿÿÿ8ªüûÆ1
-
-java:S1319"nThe type of "buyerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ÒÂ¨Ùúÿÿÿÿ8ªüûÆ1
-€
-java:S1104"^Make assistantArrayList a static final constant or non-public and provide accessors if needed.(–â­Óşÿÿÿÿ8‘ªüûÆ1
-|
-java:S1104"ZMake buyerArrayList a static final constant or non-public and provide accessors if needed.(ÒÂ¨Ùúÿÿÿÿ8‘ªüûÆ1
-Z
-java:S1444"8Make this "public static assistantArrayList" field final(–â­Óşÿÿÿÿ8‘ªüûÆ1
-V
-java:S1444"4Make this "public static buyerArrayList" field final(ÒÂ¨Ùúÿÿÿÿ8‘ªüûÆ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·Ìß¿ûÿÿÿÿ8“ªüûÆ1
+•
+java:S1319"sThe type of "arrayListAssistants" should be an interface such as "List" rather than the implementation "ArrayList".(À©ÿÒøÿÿÿÿ8…ÂÀíÈ1
+‹
+java:S1319"nThe type of "arrayListBuyer" should be an interface such as "List" rather than the implementation "ArrayList".(Àí­¯8†ÂÀíÈ1
+
+java:S1104"_Make arrayListAssistants a static final constant or non-public and provide accessors if needed.(À©ÿÒøÿÿÿÿ8†ÂÀíÈ1
+w
+java:S1104"ZMake arrayListBuyer a static final constant or non-public and provide accessors if needed.(Àí­¯8‡ÂÀíÈ1
+[
+java:S1444"9Make this "public static arrayListAssistants" field final(À©ÿÒøÿÿÿÿ8‡ÂÀíÈ1
+Q
+java:S1444"4Make this "public static arrayListBuyer" field final(Àí­¯8‡ÂÀíÈ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·Ìß¿ûÿÿÿÿ8ˆÂÀíÈ1
+?
+java:S2386"Make this member "protected".(À©ÿÒøÿÿÿÿ8Ë¾ë•É1
+:
+java:S2386"Make this member "protected".(Àí­¯8Í¾ë•É1

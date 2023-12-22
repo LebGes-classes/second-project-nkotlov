@@ -1,121 +1,99 @@
 package People;
 
+
 import java.util.Scanner;
 
 public class Buyer extends Human {
+    private int idBuyer;//id покупателя
+
     @Override
-    public void setNameHuman() {
-        System.out.println("Введите ФИО покупателя: ");
+    public void setHumanName() {//сеттер имя покупателя
+        System.out.println("Введите ФИО покупателя:");
         while (true) {
-            Scanner scan = new Scanner(System.in);
-            String nameBuyer = scan.nextLine().trim();
-            if (!nameBuyer.isEmpty()) {
-                nameHuman = nameBuyer;
+            String inputName = scan.nextLine().trim();
+            if (!inputName.isEmpty()) {
+                nameHuman = inputName;
                 break;
             } else {
-                System.out.println("Некорректный ввод данных. Введите ФИО покупателя: ");
+                System.out.println("Некорректный ввод. Пожалуйста, введите ФИО покупателя:");
             }
         }
     }
 
     @Override
-    public String getNameHuman() {
+    public String getHumanName() {
         return nameHuman;
-    }
+    }//геттер имя покупателя
+
 
     @Override
-    public void setBirthdayHuman() {
-        System.out.println("Введите дату рождения покупателя: ");
+    public void setHumanBirthday() {//сеттер др покупателя
+        System.out.println("Введите дату рождения покупателя:");
         while (true) {
-            Scanner scan = new Scanner(System.in);
-            String birthdayBuyer = scan.nextLine();
-            if (!birthdayBuyer.isEmpty()) {
-                birthdayHuman = birthdayBuyer;
+            String inputDR = scan.nextLine().trim();
+            if (!inputDR.isEmpty()) {
+                birthdayHuman = inputDR;
                 break;
             } else {
-                System.out.println("Некорректный ввод данных. Введите дату рождения покупателя: ");
+                System.out.println("Некорректный ввод. Пожалуйста, введите дату рождения поупателя:");
             }
         }
     }
 
     @Override
-    public String getBirthdayHuman() {
+    public String getHumanBirthday() {
         return birthdayHuman;
-    }
+    }//геттер др покупателя
+
 
     @Override
-    public void setIdHuman() {
-        System.out.println("Введите Id покупателя: ");
-        Scanner scan = new Scanner(System.in);
-        while (!scan.hasNextInt()) {
-            System.out.println("Некорректный ввод данных. Введите Id покупателя: ");
-            scan.next();
+    public void setHumanId() {//сеттер id покупателя
+        System.out.println("Введите id покупателя:");
+        while (!scan.hasNextInt()){
+            System.out.println("Некорректный ввод. Введите id покупателя:");
+            scan.next(); // Прочитать некорректный ввод, чтобы избежать зацикливания
         }
-        int idBuyerScanner = scan.nextInt();
-        idHuman = idBuyerScanner;
+        idBuyer = scan.nextInt();
         scan.nextLine();
-
     }
-
     @Override
-    public int getIdHuman() {
-        return idHuman;
-    }
+    public int getHumanId() {
+        return idBuyer;
+    }//геттер id покупателя
 
-    public void setBuyerInfo() {
-        setNameHuman();
-        setBirthdayHuman();
-        setIdHuman();
+
+    public void setInfoBuyer(){//все сеттеры покупателя
+        setHumanName();
+        setHumanBirthday();
+        setHumanId();
         addBuyer();
     }
-
-    public static void printBuyerInfo() {
-        if (buyerArrayList.size() > 0) {
-            for (int i = 0; i < buyerArrayList.size(); i++) {
-                Buyer buyer = buyerArrayList.get(i);
-                System.out.println();
-                System.out.println("Номер покупателя: " + (i + 1));
-                System.out.println("ФИО покупателя: " + buyer.getNameHuman());
-                System.out.println("Дата рождения покупателя: " + buyer.getBirthdayHuman());
-                System.out.println("Id покупателя: " + buyer.getIdHuman());
+    public static void printInfoBuyer() {//вывод инфо про покупателя(все геттеры покупателя)
+        if (arrayListBuyer.size()>0){
+            for (int i = 0; i < arrayListBuyer.size(); i++) {
+                Buyer buyer = arrayListBuyer.get(i);
+                System.out.println((i + 1) + ". ");
+                System.out.println("ФИО покупателя: " + buyer.getHumanName());
+                System.out.println("Дата рождения покупателя: " + buyer.getHumanBirthday());
+                System.out.println("Id покупателя: " + buyer.getHumanId());
             }
-        } else {
-            System.out.println("Нет покупателей");
+        }else {
+            System.out.println("Нет покупателей.");
         }
     }
-
     public void addBuyer() {
-        buyerArrayList.add(this);
+        arrayListBuyer.add(this);
     }
 
-    public static void removeBuyerAll() {
-        if (buyerArrayList.size() > 0) {
-            while (buyerArrayList.size() != 0) {
-                for (int i = 0; i < buyerArrayList.size(); i++) {
-                    buyerArrayList.remove(buyerArrayList.get(i));
-                }
-            }
-            System.out.println("Все покупатели удалены!");
-        } else {
-            System.out.println("Нет покупателей");
-        }
-
-    }
-
+    // Метод для удаления ассистента из списка
     public static void removeBuyer() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Введите номер покупателя, которого хотите удалить: ");
-        if (buyerArrayList.size() > 0) {
-            int removeScan = scan.nextInt();
-            if (removeScan > 0 && removeScan <= buyerArrayList.size()) {
-                buyerArrayList.remove(removeScan - 1);
-            } else {
-                System.out.println("Неверный номер покупателя. Введите номер покупателя, которого хотите удалить: ");
-            }
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Введите номер покупателя, которого хотите удалить:");
+        int idRemoveBuyer= scan.nextInt();
+        if (idRemoveBuyer > 0 && idRemoveBuyer <= arrayListBuyer.size()) {
+            arrayListBuyer.remove(idRemoveBuyer - 1);
         } else {
-            System.out.println("Нет покупателей");
+            System.out.println("Некорректный номер покупателя.");
         }
-
-
     }
 }

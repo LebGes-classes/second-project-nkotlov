@@ -1,11 +1,22 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿÙ–¼8¤„¼úÆ1
-G	java:S106"+Replace this use of System.out by a logger.(§«ØÔ8¿„¼úÆ1
-F	java:S106"+Replace this use of System.out by a logger.(¡£˜8Ç„¼úÆ1
-L	java:S106"+Replace this use of System.out by a logger.(é ùÍşÿÿÿÿ8È„¼úÆ1
-G	java:S106"+Replace this use of System.out by a logger.(ş³¯”8Ê„¼úÆ1
-L	java:S106"+Replace this use of System.out by a logger.(ÄıŞêÿÿÿÿÿ8Ò„¼úÆ1
-L	java:S106"+Replace this use of System.out by a logger.(½³è¢ıÿÿÿÿ8Ô„¼úÆ1
-L	java:S106#"+Replace this use of System.out by a logger.(§œ¥´úÿÿÿÿ8Ö„¼úÆ1
-G	java:S106'"+Replace this use of System.out by a logger.(„è¹£8Ù„¼úÆ1
-G	java:S106)"+Replace this use of System.out by a logger.(ØöÏ×8Û„¼úÆ1
+q
+java:S1192"TDefine a constant instead of duplicating this literal "PointsOfSaleProduct" 3 times.(É±ÎÁ8ÓÃíÈ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿÙ–¼8’ÓÃíÈ1
+n
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ø¼ëÄûÿÿÿÿ8ĞÓÃíÈ1
+i
+java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(˜—®İ8ĞÓÃíÈ1
+X	java:S125"<This block of commented-out lines of code should be removed.(ÆÿĞè8ÙÓÃíÈ1
+L	java:S106*"+Replace this use of System.out by a logger.(Ú„ö üÿÿÿÿ8áÓÃíÈ1
+L	java:S106,"+Replace this use of System.out by a logger.(¢–¡õÿÿÿÿÿ8âÓÃíÈ1
+]	java:S1253"<This block of commented-out lines of code should be removed.(Ê¶Àüÿÿÿÿ8äÓÃíÈ1
+L	java:S1067"+Replace this use of System.out by a logger.(â¬æƒüÿÿÿÿ8æÓÃíÈ1
+L	java:S106;"+Replace this use of System.out by a logger.(§œ¥´úÿÿÿÿ8èÓÃíÈ1
+L	java:S106?"+Replace this use of System.out by a logger.(ûâ„•úÿÿÿÿ8êÓÃíÈ1
+L	java:S106A"+Replace this use of System.out by a logger.(ºÈ•½ıÿÿÿÿ8ëÓÃíÈ1
+G	java:S106I"+Replace this use of System.out by a logger.(‰»ş8íÓÃíÈ1
+L	java:S106T"+Replace this use of System.out by a logger.(ÜÉÊÂÿÿÿÿÿ8öÓÃíÈ1
+L	java:S106W"+Replace this use of System.out by a logger.(€ÃÃˆûÿÿÿÿ8÷ÓÃíÈ1
+L	java:S106["+Replace this use of System.out by a logger.(½³è¢ıÿÿÿÿ8ùÓÃíÈ1
+G	java:S106^"+Replace this use of System.out by a logger.(•ÈŞ£8úÓÃíÈ1
+X	java:S125c"<This block of commented-out lines of code should be removed.(éË¢„8üÓÃíÈ1

@@ -1,0 +1,6 @@
+
+‡
+java:S1319"kThe type of "productList" should be an interface such as "List" rather than the implementation "ArrayList".(·¨ø|8Ì¬ÏóÈ1
+s
+java:S1104"WMake productList a static final constant or non-public and provide accessors if needed.(·¨ø|8Î¬ÏóÈ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—‹Íˆúÿÿÿÿ8Ğ¬ÏóÈ1
